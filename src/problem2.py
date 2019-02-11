@@ -200,6 +200,24 @@ def problem2b(rect, n, delta, win):
     #    TIME ESTIMATE:   15 to 25 minutes.
     # -------------------------------------------------------------------------
 
+    for k in range (n):
+        x1=rect.get_upper_left_corner().x-(delta*k)
+        y1=rect.get_upper_left_corner().y-(delta*k)
+        Point1=rg.Point(x1,y1)
+
+        x2=rect.get_lower_right_corner().x+(delta*k)
+        y2=rect.get_lower_right_corner().y+(delta*k)
+        Point2=rg.Point(x2,y2)
+
+        rect2=rg.Rectangle(Point1,Point2)
+        if k==0:
+            rect2.fill_color = rect.fill_color
+
+        rect2.attach_to(win)
+        win.render()
+
+
+
 
 
 
