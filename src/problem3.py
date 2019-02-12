@@ -108,10 +108,10 @@ def run_test_problem3a():
     window4 = rg.RoseWindow(450, 300, title)
 
     point = rg.Point(50, 40)
-    expected = 15
+    expected = 25
     answer = problem3a(window4, point, 5)
     print()
-    print('Test 4 expected:', expected)
+    print('Test 5 expected:', expected)
     print('       actual:  ', answer)
 
     window4.close_on_mouse_click()
